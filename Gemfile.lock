@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/peterjm/figaro.git
+  revision: 5833b8a8ee12d9ce38c695b00d082e0ec826ce90
+  specs:
+    figaro (0.7.0)
+      bundler (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -62,3 +69,4 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
+  figaro!

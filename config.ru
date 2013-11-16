@@ -1,7 +1,12 @@
 require 'dashing'
+require 'figaro'
+
+Figaro.path = File.expand_path "config/application.yml", File.dirname(__FILE__)
+Figaro.environment = ENV["RACK_ENV"]
+Figaro.load
 
 configure do
-  set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :auth_token, ENV['AUTH_TOKEN']
 
   helpers do
     def protected!
