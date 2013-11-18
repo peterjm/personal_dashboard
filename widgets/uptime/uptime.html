@@ -1,0 +1,8 @@
+<h1 class="title" data-bind="title"></h1>
+
+<h3 data-bind="status"></h3>
+
+<p class="more-info">Up for <span data-bind="lastChange | durationSince | durationInWords"></span></p>
+<p class="more-info" data-hideif="true">since <span data-bind="lastChange | datetime"></span></p>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>

@@ -3,9 +3,8 @@
 #= require dashing.js
 
 #= require_directory .
+#= require_directory ./helpers
 #= require_tree ../../widgets
-
-console.log("Yeah! The dashboard has started!")
 
 Dashing.on 'ready', ->
   Dashing.widget_margins ||= [5, 5]
